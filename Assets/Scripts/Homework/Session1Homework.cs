@@ -35,12 +35,12 @@ public class Session1Homework : MonoBehaviour
         myDictionary.Add(2, "b");
         myDictionary.Add(3, "c");
 
-
         if (myDictionary.ContainsKey(1)) 
         {
             Debug.Log("The first letter is" + myDictionary.Values);
         }
     }
+
 
     // Update is called once per frame
     void Update()
