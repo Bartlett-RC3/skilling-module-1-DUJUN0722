@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Session1Homework : MonoBehaviour
 {
 
@@ -20,24 +21,24 @@ public class Session1Homework : MonoBehaviour
 
         // HOMEWORK v
         int[] myArray = { 1, 2, 3, 4, 5 };
-        Debug.Log(myArray);
+        Debug.Log(myArray[0]);
 
         // HOMEWORK vi
         List<double> myList = new List<double>();
         myList.Add(1.11);
         myList.Add(2.22);
-        Debug.Log(myList);
+        Debug.Log(myList[0]);
 
         // HOMEWORK vii
-        Dictionary<string, string> myDictionary = new Dictionary<string, string>;
-        myDictionary.Add("sweet", "chocolate");
-        myDictionary.Add("sweet", "sugar");
-        myDictionary.Add("spicy", "chili");
-        myDictionary.Add("spicy", "garlic");
+        Dictionary<int, string> myDictionary = new Dictionary<int, string>();
+        myDictionary.Add(1, "a");
+        myDictionary.Add(2, "b");
+        myDictionary.Add(3, "c");
 
-        if (myDictionary.ContainsKey("sweet")) 
+
+        if (myDictionary.ContainsKey(1)) 
         {
-            Debug.Log("The sweet food is" + myDictionary.Values);
+            Debug.Log("The first letter is" + myDictionary.Values);
         }
     }
 
